@@ -1,19 +1,19 @@
-<div id="movie_container" class="">
+<div id="movie_container" class="container">
+  <div id="movie_form">
+    <form action="/movies" method="get" class="offset8 form-search">
+      <input placeholder="Search a movie..." type="text" name="input_title" class="input-medium search-query">
+      <button type="submit" class="btn">Search</button>
+    </form>
+  </div> <!--id=movie_form -->
 
-  <form action="/movies" method="get" class="form-search">
-    <input placeholder="Search a movie..." type="text" name="input_title" class="input-medium search-query">
-    <button type="submit" class="btn">Search</button>
-  </form>
+  <div id="movie_info">
+    <% if !params["input_title"].nil? %>
+          <ul id="movie_title"><%= @results.title %></ul>
+          <ul class="movie_details"><%= "Plot:  " + @results.plot.to_s %></ul>
+          <ul class="movie_details"><%= "Year:  " + @results.released.to_s %></ul>
+          <ul class="movie_details"><%= "Director:  " + @results.director.to_s %></ul>
+          <ul class="movie_details"><%= "Actors:  " + @results.actors.join(",  ") %></ul>
+    <% end %>
+  </div> <!-- id=movie_info -->
 
-  <%  if !params["input_title"].nil? %>
-    <p id="movies"><%= @results.title %></p>
-      <li>
-        <ul><%= "Plot:  " + @results.plot.to_s %></ul>
-        <ul><%= "Year:  " + @results.released.to_s %></ul>
-        <ul><%= "Director:  " + @results.director.to_s %></ul>
-        <ul><%= "Actors:  " + @results.actors.join(",  ") %></ul>
-      </li>
-
-  <%  end %>
-
-</div>
+</div> <!-- d=movie_container -->

@@ -1,2 +1,64 @@
+#navbar {
+  text-indent: 30px;
+}
 
+#index_container p {
+  font-size: 130px;
+  text-align: center;
+  padding: 40px;
+  font-weight: bold;
+  margin: 20px;
+  font-family: Helvetica;
+}
+#movie_form #image_form #stock_form {
+  padding: 30px;
+  margin: 30px 0 10px 0;
+}
 
+#movie_info {
+  padding: 40px;
+}
+#movie_title {
+  font-size: 70px;
+  font-weight: bold;
+  padding: 0 0 20px 0;
+  font-family: Helvetica;
+  text-align: left;
+}
+
+.movie_details {
+  font-size: 20px;
+  margin: 20px 0 0 25px;
+  text-align: left;
+}
+
+#img_size {
+  width: 700px;
+  border: 2px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img_size img {
+  max-width: 100%;
+  height: auto;
+}
+
+#stock_info {
+  text-align: center;
+}
+
+.symbol .company {
+    font-size: 70px;
+  font-weight: bold;
+  padding: 0 0 20px 0;
+  font-family: Helvetica;
+  text-align: left;
+}
+
+#stocks {
+   font-size: 20px;
+  margin: 20px 0 0 25px;
+  text-align: left;
+}
