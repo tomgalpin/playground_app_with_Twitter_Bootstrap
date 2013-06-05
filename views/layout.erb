@@ -1,0 +1,45 @@
+<!-- Instructions: Take playground app remodling with Twitter bootstrap-->
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Tom's Ruby Gem Playground Using Sinatra</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script></head>
+
+<body>
+  <div class="container">
+
+    <div class="container-fluid">
+
+      <div class="row-fluid offset1">
+        <div class="span2">
+          <!--Sidebar content-->
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="/index">Home</a></li>
+            <li><a href="/stocks">Stocks</a></li>
+            <li><a href="/movies">Movies</a></li>
+            <li><a href="/images">Images</a></li>
+          </ul>
+        </div>
+
+        <div class="span10 span12">
+          <!--Body content-->
+          <%= yield %>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div class="row">
+  <div id="image_container" class=" offset2">
+
+  <form action="/images" method="get" class="form-search">
+    <input placeholder="Search an image..." type="text" name="input_image" class="input-medium search-query">
+    <button type="submit" class="btn">Search</button>
+  </form>
+
+    <%  if !params["input_image"].nil? %>
+    <img src='<%= @image %>'/>
+    <%  end %>
+
+  </div>
+</div>
+
+

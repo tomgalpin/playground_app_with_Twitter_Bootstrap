@@ -1,0 +1,20 @@
+<div id="other_container" class="cf">
+
+  <form action="/stocks" method="get" class="form-search">
+    <input placeholder="Search a stock..." type="text" name="input_stock" class="input-medium search-query">
+    <button type="submit" class="btn">Search</button>
+  </form>
+
+
+
+  <%  if !params["input_stock"].nil? %>
+  <p id="stocks"><%= @stock.symbol.to_s %></p>
+  <p id="stocks"><%= @stock.company.to_s %></p>
+  <p id="stocks"><%= @stock.exchange.to_s %></p>
+  <p id="stocks"></p>
+  <p id="stocks"><%= "Last:  $" + @stock.last.to_s %></p>
+  <p id="stocks"><%= "High:  $" + @stock.high.to_s %></p>
+  <p id="stocks"><%= "Low:  $" + @stock.low.to_s %></p>
+  <%  end %>
+
+</div>
